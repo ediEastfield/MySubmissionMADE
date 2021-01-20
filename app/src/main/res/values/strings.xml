@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Movie Time</string>
+    <string name="image_description">Image</string>
+    <string name="text_primary">Sample of title text</string>
+    <string name="text_subtitle">Sample of subtitle text</string>
+    <string name="text_search">Search</string>
+    <string name="language">Language</string>
+    <string name="change_language_settings">Change Language Setting</string>
+    <string name="text_vote_average">7.0</string>
+    <string name="text_runtime">60m</string>
+    <string name="release_date">Release date:</string>
+    <string name="text_release_date">2020-08-14</string>
+    <string name="revenue">Revenue:</string>
+    <string name="budget">Budget:</string>
+    <string name="text_nominal">Rp. 000</string>
+    <string name="storyline">STORYLINE</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_setting">Setting</string>
+
+    <string name="newMovie">Now Playing</string>
+    <string name="upcomingMovie">Coming Soon</string>
+
+    <string name="title_activity_detail">Detail</string>
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. someting went wrong</string>
+</resources>

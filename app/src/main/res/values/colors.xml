@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryNight">#FF000000</color>
+    <color name="colorPrimaryLight">#FF000000</color>
+    <color name="colorPrimaryVariant">#FF7592AE</color>
+    <color name="colorOnPrimary">#FFCBDDEF</color>
+    <color name="colorSecondary">#FF364256</color>
+    <color name="colorSecondaryVariant">#FF364256</color>
+    <color name="colorOnSecondary">#FF151515</color>
+
+    <color name="colorPrimary">#B1C6DE</color>
+    <color name="colorText">#FB5558</color>
+    <color name="colorTextSecondary">#77C8B2</color>
+    <color name="colorTextTertiary">#EFEFEF</color>
+</resources>

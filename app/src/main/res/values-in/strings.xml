@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Time</string>
+    <string name="image_description">Gambar</string>
+    <string name="text_primary">Contoh Judul</string>
+    <string name="text_subtitle">Contoh Subjudul</string>
+    <string name="text_search">Pencarian</string>
+    <string name="language">Bahasa</string>
+    <string name="change_language_settings">Pengaturan ganti bahasa</string>
+    <string name="text_vote_average">7.0</string>
+    <string name="text_runtime">60m</string>
+    <string name="release_date">Tanggal Rilis:</string>
+    <string name="text_release_date">2020-08-14</string>
+    <string name="revenue">Pendapatan:</string>
+    <string name="budget">Biaya:</string>
+    <string name="text_nominal">Rp. 000</string>
+    <string name="storyline">Alur Cerita</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_setting">Setting</string>
+
+    <string name="newMovie">Sedang Tayang</string>
+    <string name="upcomingMovie">Segera Tayang</string>
+
+    <string name="title_activity_detail">Detail</string>
+    <string name="no_data">Data tidak ditemukan</string>
+    <string name="something_wrong">Oops.. terjadi kesalahan</string>
+</resources>
