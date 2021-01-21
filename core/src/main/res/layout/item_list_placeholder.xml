@@ -2,7 +2,6 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     style="@style/CardView.Light"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -17,13 +16,12 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/iv_item_favorite"
+            android:id="@+id/iv_item_image"
             android:layout_width="150dp"
             android:layout_height="225dp"
-            android:background="@android:color/white"
+            android:background="#DDDDDD"
             android:contentDescription="@string/image_description"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="H,1.5:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tv_item_title"
@@ -55,11 +53,11 @@
             android:maxLines="1"
             android:ellipsize="end"
             android:textAppearance="@android:style/TextAppearance.Material.Title"
-            android:textColor="#FFFFFFFF"
+            android:textColor="#00000000"
             app:layout_constraintBottom_toTopOf="@+id/tv_item_subtitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/text_primary"/>
+            android:text="@string/text_primary"/>
 
         <TextView
             android:id="@+id/tv_item_subtitle"
@@ -68,14 +66,12 @@
             android:layout_marginStart="4dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:drawablePadding="4dp"
-            android:gravity="center_vertical"
             android:textAppearance="@android:style/TextAppearance.Material.Body1"
             android:textColor="#B3FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_item_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_item_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iv_star"
-            tools:text="@string/text_vote_average" />
+            android:text="@string/text_vote_average" />
 
         <ImageView
             android:id="@+id/iv_star"

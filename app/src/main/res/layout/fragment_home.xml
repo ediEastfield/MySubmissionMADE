@@ -16,10 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="175dp"
             app:iss_auto_cycle="true"
-            app:iss_period="3000"
+            app:iss_period="1000"
             app:iss_delay="0"
-            app:iss_placeholder="@drawable/ic_loading"
-            app:iss_error_image="@drawable/ic_error"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -66,19 +64,29 @@
             app:layout_constraintTop_toBottomOf="@id/tv_upcoming_movie"
             tools:listitem="@layout/item_list_movie" />
 
-        <ProgressBar
+        <com.facebook.shimmer.ShimmerFrameLayout
             android:id="@+id/progress_bar"
-            style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_auto_start="true">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/item_list_placeholder"/>
+                    <include layout="@layout/item_list_placeholder"/>
+                    <include layout="@layout/item_list_placeholder"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </com.facebook.shimmer.ShimmerFrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

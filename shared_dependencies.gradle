@@ -15,6 +15,7 @@ dependencies {
     implementation "com.github.florent37:shapeofview:$shape_version"
     implementation "androidx.preference:preference:$preference_version"
     implementation "com.github.denzcoskun:ImageSlideshow:0.1.0"
+    implementation "com.facebook.shimmer:shimmer:$shimmer_version"
 
     //Koin
     implementation "org.koin:koin-core:$koin_version"

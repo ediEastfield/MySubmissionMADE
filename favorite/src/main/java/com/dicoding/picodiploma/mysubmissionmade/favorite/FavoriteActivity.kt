@@ -40,7 +40,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         favoriteViewModel.favoriteMovie.observe(this, { dataFavorite ->
             favoriteAdapter.setData(dataFavorite)
-            binding.viewEmpty.visibility = if (dataFavorite.isNotEmpty()) View.GONE else View.VISIBLE
+            binding.viewEmpty.root.visibility = if (dataFavorite.isNotEmpty()) View.GONE else View.VISIBLE
         })
 
         with(binding.rvFavorite) {
