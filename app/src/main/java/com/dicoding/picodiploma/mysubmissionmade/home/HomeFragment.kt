@@ -15,6 +15,7 @@ import com.dicoding.picodiploma.mysubmissionmade.R
 import com.dicoding.picodiploma.mysubmissionmade.core.ui.MovieAdapter
 import com.dicoding.picodiploma.mysubmissionmade.databinding.FragmentHomeBinding
 import com.dicoding.picodiploma.mysubmissionmade.detail.DetailMovieActivity
+import org.koin.android.ext.android.bind
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
@@ -97,6 +98,8 @@ class HomeFragment : Fragment() {
     }
 
     override fun onDestroyView() {
+        binding.imageSlider.removeAllViews()
+        binding.root.removeAllViewsInLayout()
         _binding = null
         super.onDestroyView()
     }

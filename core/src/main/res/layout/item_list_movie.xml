@@ -80,6 +80,7 @@
             android:layout_height="12dp"
             android:layout_marginStart="16dp"
             android:contentDescription="@string/image_description"
+            android:src="@drawable/star"
             app:layout_constraintBottom_toBottomOf="@+id/tv_item_subtitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_item_subtitle" />
