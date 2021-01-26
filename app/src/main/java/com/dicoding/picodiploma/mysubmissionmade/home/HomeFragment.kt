@@ -46,9 +46,9 @@ class HomeFragment : Fragment() {
         imageList.add(SlideModel(R.drawable.netflix))
         imageList.add(SlideModel(R.drawable.viu))
 
-        val imageSlider = binding.imageSlider
-        imageSlider.setImageList(imageList, ScaleTypes.FIT)
-        imageSlider.startSliding(3000)
+        binding.imageSlider.setImageList(imageList, ScaleTypes.FIT)
+        binding.imageSlider.startSliding(3000)
+        binding.imageSlider.stopSliding()
 
         if (activity != null) {
 
@@ -98,8 +98,6 @@ class HomeFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        binding.imageSlider.removeAllViews()
-        binding.root.removeAllViewsInLayout()
         _binding = null
         super.onDestroyView()
     }
